@@ -4,6 +4,13 @@
 алгоритма. При решении не рекомендуется пользоваться коллекциями,
 лучше обойтись исключительно массивами. */
 
+string[] EnteringStringArray()
+{
+    Console.Write("Введите строки массива через запятую: ");
+    string[] stringArray = (Console.ReadLine() ?? String.Empty).Split(",");
+    return stringArray;
+}
+
 void PrintArr(string[] array)
 {
     Console.Write("[");
