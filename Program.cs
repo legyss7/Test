@@ -4,3 +4,12 @@
 алгоритма. При решении не рекомендуется пользоваться коллекциями,
 лучше обойтись исключительно массивами. */
 
+void PrintArr(string[] array)
+{
+    Console.Write("[");
+    for (int i = 0; i < array.Length; i++)
+    {
+        Console.Write($"\"{array[i]}\", ");
+    }
+    Console.Write("\b\b]");
+}
