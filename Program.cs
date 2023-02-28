@@ -4,6 +4,14 @@
 алгоритма. При решении не рекомендуется пользоваться коллекциями,
 лучше обойтись исключительно массивами. */
 
+string[] arrayString = EnteringStringArray();
+PrintArr(arrayString);
+Console.Write(" -> ");
+PrintArr(ModifiedStringArray(arrayString));
+Console.WriteLine();
+
+
+
 string[] EnteringStringArray()
 {
     Console.Write("Введите строки массива через запятую: ");
