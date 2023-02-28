@@ -11,6 +11,26 @@ string[] EnteringStringArray()
     return stringArray;
 }
 
+string[] ModifiedStringArray(string[] array)
+{
+    int sizeModifiedArray = 0;
+    for (int i = 0; i < array.Length; i++)
+    {
+        if(array[i].Length <= 3) sizeModifiedArray++;
+    }
+    string[] modifiedArray = new string[sizeModifiedArray];
+
+    int j = 0;
+    for (int i = 0; i < array.Length; i++)
+    {
+        if(array[i].Length <= 3)
+        {
+            modifiedArray[j++] = array[i];
+        }
+    }
+    return modifiedArray;
+}
+
 void PrintArr(string[] array)
 {
     Console.Write("[");
